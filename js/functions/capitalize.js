@@ -1,3 +1,3 @@
-function capitalize(strIn) {
-    return strIn[0].toUpperCase() + strIn.slice(1);
+function capitalize(str) {
+    return str[0].toUpperCase() + str.slice(1);
 }

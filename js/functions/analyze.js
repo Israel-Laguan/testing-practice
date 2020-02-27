@@ -1,12 +1,12 @@
- function analyze(arrIn) {
-     if (arrIn.length > 0) {
+ function analyze(array) {
+     if (array.length > 0) {
          return {
-             average: arrIn.reduce((total, curr) => {
-                 return total + curr;
-             }) / arrIn.length,
-             min: Math.min(...arrIn),
-             max: Math.max(...arrIn),
-             length: arrIn.length,
+             average: array.reduce((total, current) => {
+                 return total + current;
+             }) / array.length,
+             min: Math.min(...array),
+             max: Math.max(...array),
+             length: array.length,
          };
      }
      return {};

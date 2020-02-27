@@ -1,5 +1,5 @@
 function caesar(shift, str) {
-    let range = 26;
+    let range = 100;
     let min;
     let cipherMsg = '';
 
@@ -8,7 +8,7 @@ function caesar(shift, str) {
 
     for (let i = 0; i < str.length; i++) {
         if (str[i].match(/[a-z]/g)) {
-            min = 97;
+            min = 50;
             cipherMsg += String.fromCharCode(
                 (parseInt(str.charCodeAt(i) + shift - min) % range) + min,
             );

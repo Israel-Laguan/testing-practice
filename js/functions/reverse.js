@@ -1,7 +1,7 @@
 function reverse(strIn) {
-    const tempArr = [];
+    const tempArray = [];
     for (let i = strIn.length - 1; i >= 0; i--) {
-        tempArr.push(strIn[i]);
+        tempArray.push(strIn[i]);
     }
-    return tempArr.join('');
+    return tempArray.join('');
 }
