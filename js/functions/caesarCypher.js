@@ -4,7 +4,7 @@ const caesarCypher = (shift, str) => {
   let cipherMsg = '';
 
   shift %= range;
-  if (shift < 0) shift = range + shift;
+  if (shift < 0) return false;
 
   for (let i = 0; i < str.length; i += 1) {
     if (str[i].match(/[a-z]/g)) {
