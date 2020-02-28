@@ -36,6 +36,7 @@
 
 # Features
 
+- Included Analyze, Caesar Cipher, Calculator, Capitalize and Reverse scripts
 - Basic VanillaJS app with a single script or few commands
 - JS modules and ES6+ available for most browsers
 
@@ -57,11 +58,11 @@
 ### Run locally
 
 - `npm i`  to install dependencies
-- `npm start` to start development server
+- `npm run test` to start the testing suite
 
 # Live Demo
 
-[Link](http://blue-planner.surge.sh/)
+This project does not include a live demo
 
 # Authors
 
