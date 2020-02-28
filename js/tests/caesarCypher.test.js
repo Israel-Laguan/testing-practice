@@ -5,7 +5,11 @@ describe('caesarCypher', () => {
     expect(caesarCypher(2, 'abcd')).toBe('cdef');
   });
 
-  it('can decipher and obscured string', () => {
-    expect(caesarCypher(-2, 'cdef')).toBe('abcd');
+  it('returns false when shift number is less than 0', () => {
+    expect(caesarCypher(-1, 'abcde')).toBeFalsy();
+  });
+
+  it('cipher capital letters as capital letter', () => {
+    expect(caesarCypher(4, 'AbCdE')).toBe('EfGhI');
   });
 });
