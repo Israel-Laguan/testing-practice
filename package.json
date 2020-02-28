@@ -4,6 +4,7 @@
   "description": "Practice testing on JS files",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --color --cache -f table js",
     "test": "jest --coverage -w =100%"
   },
   "jest": {
