@@ -8,4 +8,8 @@ describe('reverse', () => {
   it('returns empty string if no parameter given', () => {
     expect(reverse()).toBe('');
   });
+
+  it('returns empty string if no string given', () => {
+    expect(reverse(4)).toBe('');
+  });
 });

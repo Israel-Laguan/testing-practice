@@ -3,11 +3,11 @@ import analyze from '../functions/analyze';
 describe('analyze', () => {
   it('When you analyze an array it detects correct length', () => {
     expect(analyze([1, 8, 3, 4, 2, 6]).length).toStrictEqual(6);
-  });
-
-  test('When you analyze an array it detects correct average', () => {
     expect(analyze([1, 8, 3, 4, 2, 6]).average).toStrictEqual(4);
   });
+
+  // test('When you analyze an array it detects correct average', () => {
+  // });
 
   test('When you analyze an array it detects correct length', () => {
     expect(analyze([1, 8, 3, 4, 2, 6]).min).toStrictEqual(1);

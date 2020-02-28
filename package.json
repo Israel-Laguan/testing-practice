@@ -1,10 +1,10 @@
 {
   "name": "testing-practice",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Practice testing on JS files",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage -w =100%"
   },
   "jest": {
     "transform": {

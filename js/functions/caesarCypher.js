@@ -1,27 +1,16 @@
-const caesarCypher = (shift, str) => {
-  const range = 100;
-  let min;
-  let cipherMsg = '';
-
-  shift %= range;
-  if (shift < 0) shift = range + shift;
+const caesarCypher = (key, str) => {
+  let decipher = '';
 
   for (let i = 0; i < str.length; i += 1) {
-    if (str[i].match(/[a-z]/g)) {
-      min = 50;
-      cipherMsg += String.fromCharCode(
-        (parseInt(str.charCodeAt(i) + shift - min, 10) % range) + min,
-      );
-    } else if (str[i].match(/[A-Z]/g)) {
-      min = 65;
-      cipherMsg += String.fromCharCode(
-        (parseInt(str.charCodeAt(i) + shift - min, 10) % range) + min,
-      );
+    if (str[i] === str[i].toUpperCase()) {
+      decipher += String.fromCharCode(((str.charCodeAt(i) + key - 65) % 26) + 65);
     } else {
-      cipherMsg += str[i];
+      decipher += String.fromCharCode(((str.charCodeAt(i) + key - 97) % 26) + 97);
     }
   }
-  return cipherMsg;
+
+
+  return decipher;
 };
 
 export default caesarCypher;
